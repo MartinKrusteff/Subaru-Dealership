@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Subaru</title>
+  </head>
+ 
+    <div class="slideshow-container">
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a href="/">Subaru</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="/">All cars</a></li>
+            <li><a href="/">Prices and promotions</a></li>
+            <li><a href="/">Owners & service</a></li>
+            <li><a href="/">Our services</a></li>
+              <li><a href="/">About us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mySlides fade">
+        <img src="subaru1.jpg" alt="Снимка 1" />
+      </div>
+      <div class="mySlides fade">
+        <img src="subaru2.jpg" alt="Снимка 2" />
+      </div>
+      <div class="mySlides fade">
+        <img src="subaru3.jpg" alt="Снимка 3" />
+      </div>
+      <div class="text-overlay">
+        <p class="animated-text">Think, feel, drive</p>
+        <p class="animated-text">The brand new STI is now here</p>
+      </div>
+    </div>
+   
+    <div class="all-animated">
+       <span class="line"></span>
+      <div class="animation-container">
+        <div class="animated-number" data-number="5.2">0</div>
+       <span class="sp"> sec 0-100</span>
+      </div>
+      <div class="animation-container">
+        <div class="animated-number" data-number="305">0</div>
+       <span class="sp">hp</span> 
+      </div>
+      <div class="animation-container">
+        <div class="animated-number" data-number="407">0</div>
+       <span class="sp">Nm at 4000rpm</span> 
+      </div>
+    </div>
+    <span class="line"></span>
+    <div class="bigmenu">
+      <div class="menu1">
+        <button class="toggle-button" onclick="toggleMenu(1)">Preview</button>
+        <button class="toggle-button" onclick="toggleMenu(2)">
+          Suspension and steering
+        </button>
+        <button class="toggle-button" onclick="toggleMenu(3)">
+          Mechanical
+        </button>
+        <button class="toggle-button" onclick="toggleMenu(4)">
+          Dimensions
+        </button>
+        <button class="toggle-button" onclick="toggleMenu(5)">
+          Comfort And Convenience
+        </button>
+        <ul class="menu-list" id="menu1">
+          <li><p>Engine: 2.5L H4 turbo DOHC 16-valve</p></li>
+          <li><p>Power: 305 hp @ 6000 rpm</p></li>
+          <li><p>Transmission: 6-speed manual transmission</p></li>
+          <li><p>Body Sedan</p></li>
+          <li><p>Doors 4</p></li>
+          <li><p>Seats 5</p></li>
+        </ul>
+      </div>
+      <div class="menu2">
+        <ul class="menu-list" id="menu2">
+          <li><p>Front Anti-Roll Bar:
+Front stabilizer bar</p></li>
+          <li><p>Front Suspension:
+Independent front suspension</p></li>
+          <li><p>Tires:
+P245/40R18</p></li>
+          <li><p>Power Steering:
+Power rack-and-pinion steering</p></li>
+          <li><p>Suspension:
+STI Performance-tuned suspension</p></li>
+          <li><p>Rear Suspension:
+Independent rear suspension</p></li>
+        </ul>
+      </div>
+            <div class="menu3">
+        <ul class="menu-list" id="menu3">
+          <li><p>DriveTrain:
+All-wheel drive</p></li>
+          <li><p>Engine Name:
+2.5L H4 turbo DOHC 16-valve</p></li>
+          <li><p>Stability Control:
+Yes</p></li>
+          <li><p>Traction Control:
+Yes</p></li>
+          <li><p>Transmission:
+6-speed manual transmission</p></li>
+          <li><p>Start button:
+Yes</p></li>
+        </ul>
+      </div>
+            <div class="menu4">
+        <ul class="menu-list" id="menu4">
+          <li><p>Cargo Capacity:
+340 L</p></li>
+          <li><p>Curb Weight:
+1567 kg</p></li>
+          <li><p>Ground Clearance:
+125 mm</p></li>
+          <li><p>Height:
+1475 mm</p></li>
+          <li><p>Wheelbase:
+2650 mm</p></li>
+          <li><p>Width:
+1795 mm</p></li>
+        </ul>
+      </div>
+       <div class="menu5">
+        <ul class="menu-list" id="menu5">
+          <li><p>Air Conditionning:
+Dual-zone automatic climate control</p></li>
+          <li><p>Audio Monitor:
+7.0-inch high resolution touch-screen display</p></li>
+          <li><p>Intelligent Key System:
+Yes</p></li>
+          <li><p>Number of Speakers:
+9 premium speakers</p></li>
+          <li><p>Premium Sound System:
+Harman/Kardon surround sound system</p></li>
+          <li><p>Wiper Defroster:
+Wiper de-icer</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="car-boxes">
+      
+      <button class="car-box">
+        <img src="Impreza2.jpg" alt="car1">
+        <h2>Subaru Impreza <br>
+        2.0i Sedan</h2>
+        <p>2.0L H4 DOHC 16-valve</p>
+        <p>148 hp @ 6200 rpm</p>
+      </button>
+    
+
+    <button class="car-box">
+        <img src="wrx.jpg" alt="car2">
+        <h2>Subaru Impreza WRX</h2>
+        <p>2.0L H4 turbo DOHC 16-valve</p>
+        <p>268 hp @ 6500 rpm</p>
+    </button>
+
+        <button class="car-box">
+        <img src="sti.jpg" alt="car3">
+        <h2>Subaru Impreza WRX STI</h2>
+        <p>2.5L H4 turbo DOHC 16-valve</p>
+        <p>305hp @ 6,000 rpm</p>
+    </button>
+    </div>
+      <div class="button-container">
+        <button class="toggle-button" onclick="showImage('image1')">Head unit</button>
+        <button class="toggle-button" onclick="showImage('image2')">Wheels</button>
+        <button class="toggle-button" onclick="showImage('image3')">Steering wheel</button>
+    </div>
+    
+    <div class="image-container" id="image1">
+        <img src="nav.jpg" alt="Снимка 1">
+    </div>
+    
+    <div class="image-container" id="image2">
+        <img src="wheels.jpg" alt="Снимка 2">
+    </div>
+    
+    <div class="image-container" id="image3">
+        <img src="steeringwheel.jpg" alt="Снимка 3">
+    </div>
+    <br>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Лого на сайта">
+            <h1>Subaru Dealership</h1>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact us</h3>
+            <p>Phone number: +359 123 456 789</p>
+            <p>Email: info@example.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Subaru Demo. All rights preserved.</p>
+    </div>
+</footer>
+    
+    
+ <span class="line"></span>
+    <script src="script.js"></script>
+  </body>
+</html>

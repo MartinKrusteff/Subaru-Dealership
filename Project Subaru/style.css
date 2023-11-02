@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 33, 33);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.slideshow-container {
+  min-width: 100vh;
+  max-height: 80vh;
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.mySlides {
+  background-position: center;
+  background-size: cover;
+  max-width: none; /* Позволява на снимката да бъде по-широка от контейнера */
+  max-height: 100%; /* Запазване на съотношението на снимката по вертикала */
+  width: auto; /* Автоматична ширина на снимката */
+}
+
+.mySlides img {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Анимация за смяна на снимките */
+.fade {
+  animation-name: fade;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4); /* Прозрачен цвят на фона */
+  color: #ffffff; /* Цвят на текста */
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Скрива текста, докато анимацията не започне */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.text-overlay p {
+  margin: 0;
+  font-size: 2rem; /* Големина на шрифта */
+  font-weight: bold; /* Дебелина на шрифта */
+}
+
+.animation-container {
+  text-align: center;
+  margin: 20px;
+  font-size: 24px;
+  display: inline;
+}
+.all-animated {
+  text-align: center;
+  margin-top: 1.2rem;
+  padding: 1rem;
+}
+
+.animated-number {
+  font-size: 36px;
+  color: #ffffff; /* Цвят на текста */
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Прозрачен фон */
+  color: #fff; /* Цвят на текста */
+  z-index: 2; /* Задният план - навигационният бар трябва да бъде над снимките */
+}
+
+/* Стилове за контейнера на снимките (slideshow-container) */
+
+/* Стилове за текста и анимацията (text-overlay) на снимките */
+
+.container {
+  max-width: 98vw;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px; /* Големина на шрифта */
+  opacity: 0; /* Начална невидимост */
+  animation: text-fade 2s ease-in-out 1s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes text-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-list {
+  display: none;
+  list-style: none;
+  text-align: right;
+  font-size: 1.4rem;
+  color: white;
+}
+.menu-list li {
+  text-align: left;
+}
+
+/* Стилове за бутона за разширяване/свиване */
+.toggle-button {
+  background-color: 211, 211, 211;
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  background: linear-gradient(to bottom, #2f2e2d 0%, #453f3c 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s ease-in-out;
+}
+.car-button:hover {
+  transform: translateY(-2px);
+}
+
+.toggle-button-2 {
+  background-color: grey;
+  color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.menu {
+  display: inline;
+}
+.line {
+  width: 50%;
+  height: 0.1rem;
+  background-color: grey;
+  display: block;
+  margin: 0 auto;
+}
+.bigmenu {
+  margin: 2rem 5rem 6rem 8rem;
+}
+
+.car-box {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+  display: inline-block;
+}
+
+.car-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.car-box h2 {
+  font-size: 1.6rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.car-box p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: white;
+}
+.car-boxes {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.footer-logo h1 {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.footer-contact h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  font-size: 14px;
+}
+.sp {
+  color: #ffffff;
+}
+.image-container {
+  text-align: center;
+  position: relative;
+  /* За позициониране на бутоните спрямо снимките */
+}
+.image-container img {
+  max-height: 30rem;
+  height-width: 70rem;
+}
+.button-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block; /* Показваме бутоните като блокове, за да бъдат подредени един под друг */
+  margin-bottom: 10px; /* Разстояние между бутоните */
+}
